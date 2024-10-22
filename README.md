@@ -22,16 +22,6 @@
 | Xcode           | 15.4+         |
 | Swift           | 5.10+         |
 
-## Swift Package Manager (SPM) SDK Installation
-
-As **CafSolutions** is used internally within [**DocumentDetector**](https://github.com/combateafraude/DocumentDetector) and [**FaceLiveness**](https://github.com/combateafraude/FaceLiveness), you should not directly add it as a separate package. Instead, **CafSolutions** is automatically included when you integrate either **DocumentDetector** or **FaceLiveness** into your project.
-
-## Usage
-
-**CafSolutions** is not intended for direct use in your project. Instead, it operates internally as part of the **DocumentDetector** and **FaceLiveness** SDKs to provide shared functionality for secure data handling and communications.
-
-For any interactions with **DocumentDetector** or **FaceLiveness**, please refer to their respective documentation.
-
 ## Privacy Policy and Terms & Conditions of Use
 
 When using our SDKs, please make sure that you agree with our [Privacy Policy](https://en.caf.io/politicas/politicas-de-privacidade) and our [Terms and Conditions of Use](https://en.caf.io/politicas/termos-e-condicoes-de-uso).
