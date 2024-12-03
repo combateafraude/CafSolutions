@@ -11,8 +11,8 @@
 ### Stable
 
 | SDK            | Version |
-| -------------- | ------- |
-| CafSolutions   | 1.0.0   |
+| -------------- |---------|
+| CafSolutions   | 1.0.1   |
 
 #### Requirements
 
