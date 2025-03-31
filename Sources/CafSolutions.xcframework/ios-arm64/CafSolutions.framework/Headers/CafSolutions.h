@@ -745,7 +745,7 @@ __attribute__((swift_name("CafDocumentDetectorService")))
 __attribute__((swift_name("CafFaceLivenessProvidersProtocol")))
 @protocol CafSolutionsCafFaceLivenessProvidersProtocol
 @required
-- (void)startLivenessCheckParameters:(NSDictionary<NSString *, id> *)parameters completion:(void (^)(NSDictionary<NSString *, id> *))completion __attribute__((swift_name("startLivenessCheck(parameters:completion:)")));
+- (void)startLivenessCheckParameters:(NSDictionary<NSString *, id> *)parameters livenessBaseUrl:(NSString *)livenessBaseUrl certificates:(NSArray<NSString *> *)certificates completion:(void (^)(NSDictionary<NSString *, id> *))completion __attribute__((swift_name("startLivenessCheck(parameters:livenessBaseUrl:certificates:completion:)")));
 @end
 
 __attribute__((objc_subclassing_restricted))
@@ -762,7 +762,7 @@ __attribute__((swift_name("CafServices")))
 __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("CafTracker")))
 @interface CafSolutionsCafTracker : CafSolutionsBase
-- (instancetype)initWithSessionId:(NSString *)sessionId platform:(CafSolutionsCafPlatform *)platform clientId:(NSString *)clientId personId:(NSString * _Nullable)personId __attribute__((swift_name("init(sessionId:platform:clientId:personId:)"))) __attribute__((objc_designated_initializer));
+- (instancetype)initWithSessionId:(NSString *)sessionId platform:(CafSolutionsCafPlatform *)platform stage:(NSString *)stage clientId:(NSString *)clientId mobileToken:(NSString *)mobileToken personId:(NSString * _Nullable)personId __attribute__((swift_name("init(sessionId:platform:stage:clientId:mobileToken:personId:)"))) __attribute__((objc_designated_initializer));
 @property (class, readonly, getter=companion) CafSolutionsCafTrackerCompanion *companion __attribute__((swift_name("companion")));
 
 /**
