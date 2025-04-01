@@ -12,7 +12,7 @@
 
 | SDK            | Version |
 | -------------- |---------|
-| CafSolutions   | 2.0.4   |
+| CafSolutions   | 2.0.3   |
 
 #### Requirements
 
