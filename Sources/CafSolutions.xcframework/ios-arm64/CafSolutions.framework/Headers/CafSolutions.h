@@ -241,6 +241,7 @@ __attribute__((swift_name("CafEvent")))
 - (instancetype)initWithName:(NSString *)name ordinal:(int32_t)ordinal __attribute__((swift_name("init(name:ordinal:)"))) __attribute__((objc_designated_initializer)) __attribute__((unavailable));
 @property (class, readonly) CafSolutionsCafEvent *identify __attribute__((swift_name("identify")));
 @property (class, readonly) CafSolutionsCafEvent *startSdk __attribute__((swift_name("startSdk")));
+@property (class, readonly) CafSolutionsCafEvent *startBridgeSdk __attribute__((swift_name("startBridgeSdk")));
 @property (class, readonly) CafSolutionsCafEvent *cameraPermissionRequested __attribute__((swift_name("cameraPermissionRequested")));
 @property (class, readonly) CafSolutionsCafEvent *cameraPermissionGranted __attribute__((swift_name("cameraPermissionGranted")));
 @property (class, readonly) CafSolutionsCafEvent *cameraPermissionDenied __attribute__((swift_name("cameraPermissionDenied")));
@@ -780,7 +781,7 @@ __attribute__((swift_name("CafTracker")))
  * @note This method converts instances of CancellationException to errors.
  * Other uncaught Kotlin exceptions are fatal.
 */
-- (void)sendEventEvent:(CafSolutionsCafEvent *)event properties:(id<CafSolutionsCafPropertiesBase>)properties completionHandler:(void (^)(NSError * _Nullable))completionHandler __attribute__((swift_name("sendEvent(event:properties:completionHandler:)")));
+- (void)sendEventEvent:(CafSolutionsCafEvent *)event properties:(id<CafSolutionsCafPropertiesBase>)properties timestamp:(NSString * _Nullable)timestamp completionHandler:(void (^)(NSError * _Nullable))completionHandler __attribute__((swift_name("sendEvent(event:properties:timestamp:completionHandler:)")));
 @end
 
 __attribute__((objc_subclassing_restricted))
